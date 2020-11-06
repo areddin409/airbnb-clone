@@ -29,7 +29,7 @@ const Home = () => {
         <Card
           src='https://media.nomadicmatt.com/2019/airbnb_breakup3.jpg'
           title='3 Bedroom Condo in San Diego'
-          description='Superhost with a stunning view of the beachside Sunny San Diego'
+          description='Superhost with a stunning view of the beachside in Sunny San Diego'
           price='$130/night'
         />
         <Card

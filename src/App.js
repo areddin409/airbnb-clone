@@ -3,26 +3,28 @@ import React from 'react';
 import Home from './Home';
 import Header from './Header';
 import Footer from './Footer';
+import SearchPage from './SearchPage';
+
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 function App() {
   return (
     <div className='app'>
-      <Header />
-      <Home />
-      <Footer />
+      <Router>
+        <Header />
 
-      {/* Header */}
-      {/* Home */}
-      {/* Banner */}
-      {/* Search */}
+        <Switch>
+          <Route path='/search'>
+            <SearchPage />
+          </Route>
+          {/* have the default route at the bottom */}
+          <Route path='/'>
+            <Home />
+          </Route>
+        </Switch>
 
-      {/* Cards */}
-
-      {/* Footer */}
-
-      {/* SearchPage */}
-      {/* Header */}
-      {/* ... */}
+        <Footer />
+      </Router>
     </div>
   );
 }
