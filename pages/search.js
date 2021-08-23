@@ -62,8 +62,10 @@ function Search({ searchResults }) {
           </div>
         </section>
 
-        <section className='hidden xl:inline-flex xl:min-w-[600px]'>
-          <Map searchResults={searchResults} />
+        <section className='xl:inline-flex xl:min-w-[600px] '>
+          <div className='transition duration-500 h-3/6 w-full mt-12 mr-5 border-4 shadow-lg hover:border-red-400 hover:shadow-2xl ease-in-out'>
+            <Map searchResults={searchResults} />
+          </div>
         </section>
       </main>
       <Footer />
