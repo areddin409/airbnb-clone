@@ -103,16 +103,16 @@ function Header({ placeholder }) {
               className='w-12 pl-2 text-lg outline-none text-red-400'
             />
           </div>
-          <div className='flex'>
+          <div className='flex space-x-2'>
             <button
-              className='flex-grow text-gray-500 rounded-lg hover:bg-red-400 hover:text-white'
+              className='flex-grow text-gray-500 rounded-lg hover:bg-red-400 hover:text-white transition duration-250 ease-in'
               onClick={resetInput}
             >
               Cancel
             </button>
             <button
               onClick={search}
-              className='flex-grow text-red-400 rounded-lg hover:bg-red-400 hover:text-white'
+              className='flex-grow text-red-400 rounded-lg hover:bg-red-400 hover:text-white transition duration-250 ease-in'
             >
               Search
             </button>

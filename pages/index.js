@@ -17,7 +17,7 @@ export default function Home({ exploreData, cardsData }) {
       <Header />
       <Banner />
 
-      <main className='max-w-7xl mx-auto px-8 sm:px-16'>
+      <main className='max-w-4/5 mx-auto px-8 sm:px-16 xl:max-w-9/10'>
         <section className='pt-6'>
           <h2 className='text-4xl font-semibold pb-5'>Explore Nearby</h2>
           {/* Pull data from a server - API endpoints */}
@@ -58,8 +58,8 @@ export default function Home({ exploreData, cardsData }) {
 }
 
 export async function getStaticProps() {
-  const exploreData = await fetch('https://links.papareact.com/pyp').then(
-    (res) => res.json()
+  const exploreData = await fetch('https://jsonkeeper.com/b/TZFG').then((res) =>
+    res.json()
   );
 
   const cardsData = await fetch('https://links.papareact.com/zp1').then((res) =>
